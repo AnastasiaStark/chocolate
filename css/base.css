@@ -1,0 +1,51 @@
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: 960px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0px auto;
+  width: 940px;
+}

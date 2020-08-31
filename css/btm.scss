@@ -1,0 +1,45 @@
+.hero__button-wrapper {
+  max-width: 173px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 24px 52px;
+  text-transform: uppercase;
+  border-radius:100px;
+  line-height: 1;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border: none;
+
+
+  &__color_white {
+  background-color: white;
+  color: #365A49;
+
+&:hover {
+color: white;
+  background-color: #365A49;
+
+  }}}
+
+.button__color_green {
+   background-color:#365A49;
+   color: white;
+
+ &:hover {
+   color: #365A49;
+   background-color: white;
+ }}
+
+.button__color_none {
+  background-color:transparent;
+  font-weight: normal;
+  text-transform: none;
+
+  &:hover {
+    color:#365A49;
+  }
+}

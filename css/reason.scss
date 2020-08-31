@@ -1,0 +1,78 @@
+.headline {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 19px;
+}
+
+.section__subtitle {
+  color: #666666;
+  padding: 0 255px 0 255px;
+}
+
+.reason__list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.reason__item {
+  display: 1;
+  padding: 0 24px;
+  position: relative;
+
+  &:before {
+    content: url("../img/Combined shape 2204.png");
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);}}
+
+    .reason__item:first-child {
+      padding-left: 0;}
+
+  .reason__item:last-child {
+  padding-right: 0;
+  }
+
+  .reason__item:after {
+    display: none;
+  }
+
+.reasons {
+  text-align: center;
+
+}
+
+.reason__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.reason__title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.reason__icon {
+  background: url("../img/leaft-section.png") left 73% no-repeat;
+
+  &:before {
+    content: url("../img/berry.png");
+    position: absolute;
+    margin-bottom: -645px;
+    left: 0%
+  }
+}

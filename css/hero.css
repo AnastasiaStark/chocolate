@@ -1,0 +1,6 @@
+.hero {
+  background: url("../img/bar.png") left 78% center no-repeat, url("../img/leafter.png") right bottom no-repeat;
+  background-color: #61C4D9;
+  height: 100vp;
+  min-height: 640px;
+}

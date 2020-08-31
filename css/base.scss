@@ -1,0 +1,74 @@
+@import "general";
+
+body {
+  height:100%
+}
+body {
+  font-family:'Alegreya Sans';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.20;
+  position:relative;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+h1,h2,h3,h4,h5 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.img{
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: $containerWidth +20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+ }
+
+.container {
+    margin: 0px auto;
+    width: $containerWidth;
+}
+
+.hero__container {
+  padding: 24px 0 45px;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reason__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
