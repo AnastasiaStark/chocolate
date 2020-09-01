@@ -1,14 +1,20 @@
 .reviews {
-  background:url("../img/mix-berry.png") left bottom -4% no-repeat,
-  url("../img/leaft-review.png") left bottom -4% no-repeat;
+  background:url("../img/rasberry.png") right top 10% no-repeat;
   position: relative;
 
-  &:after {
-    content: url("../img/rasberry.png");
+  &:before {
+    content: url("../img/leaft-review.png");
     position: absolute;
-    right: 0;
-    top: 15%
+    left: 0;
+    bottom: -15%
   }
+}
+.reviews:after {
+  content: url("../img/mix-berry.png");
+  position: absolute;
+  left: 0;
+  bottom: -15%;
+  z-index: 1;
 }
 
 .review__display {

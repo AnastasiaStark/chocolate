@@ -8,13 +8,16 @@
     left: 5%;
     position: absolute;
     bottom: 20px;
+  }}
 
-    &:after {
-      content: url("../img/leaft-section.png");
+    .order-section:after {
+      content: url("../img/leaft form.png");
+      right: 5%;
       position: absolute;
+      bottom: 20px;
     }
-  }
-}
+
+
 .border__title {
   font-size: 48px;
   margin-bottom: 83px;
