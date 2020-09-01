@@ -1,0 +1,22 @@
+.order-section {
+  background: url(/background-form.2e1c19cd.png);
+  position: relative;
+  color: #365A49;
+}
+.order-section:before {
+  content: url("/one berry.72f3b2b6.png");
+  left: 5%;
+  position: absolute;
+  bottom: 20px;
+}
+.order-section:before:after {
+  content: url("/leaft-section.507047ca.png");
+  position: absolute;
+}
+
+.border__title {
+  font-size: 48px;
+  margin-bottom: 83px;
+}
+
+/*# sourceMappingURL=/order.29153b78.css.map */
