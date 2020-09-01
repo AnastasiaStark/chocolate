@@ -7,7 +7,7 @@
   "author": "",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url ./",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
