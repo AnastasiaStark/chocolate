@@ -277,14 +277,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .reviews {
-  background: url("/mix-berry.d51fe65a.png") left bottom -4% no-repeat, url("/leaft-review.f2e795ee.png") left bottom -4% no-repeat;
+  background: url("/rasberry.a9d8704d.png") right top 10% no-repeat;
   position: relative;
 }
-.reviews:after {
-  content: url("/rasberry.a9d8704d.png");
+.reviews:before {
+  content: url("/leaft-review.f2e795ee.png");
   position: absolute;
-  right: 0;
-  top: 15%;
+  left: 0;
+  bottom: -15%;
+}
+
+.reviews:after {
+  content: url("/mix-berry.d51fe65a.png");
+  position: absolute;
+  left: 0;
+  bottom: -15%;
+  z-index: 1;
 }
 
 .review__display {
@@ -380,9 +388,12 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   bottom: 20px;
 }
-.order-section:before:after {
-  content: url("/leaft-section.507047ca.png");
+
+.order-section:after {
+  content: url("/leaft form.6a85e8fc.png");
+  right: 5%;
   position: absolute;
+  bottom: 20px;
 }
 
 .border__title {
