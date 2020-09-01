@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/interactiv.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\img\\comp.png":[["comp.4e3192d1.png","img/comp.png"],"img/comp.png"],"./..\\img\\leafter.png":[["leafter.1b9fc29f.png","img/leafter.png"],"img/leafter.png"],"./..\\img\\leafter-mini.png":[["leafter-mini.9993412a.png","img/leafter-mini.png"],"img/leafter-mini.png"],"./..\\img\\Combined shape 2204.png":[["Combined shape 2204.d09c8067.png","img/Combined shape 2204.png"],"img/Combined shape 2204.png"],"./..\\img\\leaft-section.png":[["leaft-section.507047ca.png","img/leaft-section.png"],"img/leaft-section.png"],"./..\\img\\berry.png":[["berry.10956465.png","img/berry.png"],"img/berry.png"],"./..\\img\\mix-berry.png":[["mix-berry.d51fe65a.png","img/mix-berry.png"],"img/mix-berry.png"],"./..\\img\\leaft-review.png":[["leaft-review.f2e795ee.png","img/leaft-review.png"],"img/leaft-review.png"],"./..\\img\\rasberry.png":[["rasberry.a9d8704d.png","img/rasberry.png"],"img/rasberry.png"],"./..\\img\\bush.png":[["bush.d3758600.png","img/bush.png"],"img/bush.png"],"./..\\img\\background-form.png":[["background-form.2e1c19cd.png","img/background-form.png"],"img/background-form.png"],"./..\\img\\one berry.png":[["one berry.72f3b2b6.png","img/one berry.png"],"img/one berry.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/interactiv.eff96f82.js.map
+//# sourceMappingURL=/main.54166fbf.js.map
