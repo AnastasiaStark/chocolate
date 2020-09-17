@@ -1,4 +1,9 @@
-
+@import "media";
+.menu {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+}
 .menu__list {
   display: flex;
   text-align: center;
@@ -7,10 +12,39 @@
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.5rem;
 
 &:last-child {
   margin-right: 0;}}
+
+.menu__icon {
+  display: none;
+}
+
+@media screen and ( max-width:768px) {
+  .header {
+    padding: rem(31px) rem(45px) 0 rem(30px);
+  }
+
+ .menu {
+   @include tablets {
+     display: none;
+
+   }
+ }
+  .header__contact {
+    @include tablets {
+      display: none;
+    }
+  }
+  .menu__icon {
+    right: 10%;
+    display: block;
+    width: rem(26px);
+    height: rem(26px);
+  }
+}

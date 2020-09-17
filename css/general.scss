@@ -2,5 +2,14 @@
 $blue:#61C4D9;
 
 $containerWidth: 940px;
+$baseFontSize:18px;
 
+//breakpoints//
+$tablets: 768px;
+$phones: 480px;
 
+@media screen and ( max-width:480px) {
+  .container {
+    height: 100%;
+  }
+}

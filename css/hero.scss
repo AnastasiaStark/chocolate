@@ -1,51 +1,133 @@
 .hero {
-  background:url("../img/comp.png") left 78% center no-repeat,
-  url("../img/leafter.png") right bottom no-repeat;
+  background: url("../img/leafter.png") right bottom no-repeat;
   background-color: #61C4D9;
-  min-height: 640px;
+  min-height: 35.5rem;
   color: #fff;
   position: relative;
+
 
   &:before {
     content: url("../img/leafter-mini.png");
     position: absolute;
-    bottom: -40px;
-    left:2%
+    bottom: (-40px);
+    left: 2%
+  }
+
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  &:before {
+    content: url("../img/bar.png");
+    position: absolute;
+    right: 10%;
   }
 }
+
+.hero:after {
+  content: url("../img/berry hero.png");
+  position: absolute;
+  bottom: (-40px);
+  right: 2%;
+}
+
 .hero__title-section {
   width: 46%;
-  margin-bottom: 64px;
+  margin-bottom: rem(64px);
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: rem(3px);
 }
 
 .hero__text {
-  font-size: 21px;
-  margin-bottom: 28px;
+  font-size: rem(21px);
+  margin-bottom: rem(28px);
   padding-right: 10%;
 }
 
 .hero__list {
   display: flex;
-  padding: 0;
+  padding: (0);
 
 }
 
 .hero__item {
   display: flex;
-  margin-right: 46px;
+  margin-right: rem(46px);
 
   &:last-child {
-  margin-right: 0;
-}}
+    margin-right: 0;
+  }
+}
 
 .hero__description {
-  max-width: 85px;
+  max-width: rem(85px);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+
+    &:before {
+      display: none
+    }
+
+    &:after {
+      display: none
+    }
+  }
+
+  .hero__container {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &:before {
+      display: none;
+    }
+  }
+  .hero__title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+
+    &:before {
+      content: url("../img/comp 768.png");
+    }
+
+  }
+  .hero__icon-section {
+    display: none;
+  }
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__text {
+    padding: 0 16%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__title {
+    margin-bottom: 0;
+  }
 }

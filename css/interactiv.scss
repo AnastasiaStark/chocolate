@@ -4,19 +4,26 @@
   justify-content: center;
 }
 .interactive-avatar {
-  width: 74px;
-  height: 74px;
+  width: rem(74px);
+  height: rem(74px);
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 6px;
+  margin-right: rem(6px);
   border: 6px solid transparent;
+
+  &:hover {
+    border-color:#497870;
+  }
+
+  &:focus {
+    border-color:#497870;
+  }
 
   &_active {
     border-color:#497870;
 
-
   &:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }}}
 
 .interactive-avatar__img {

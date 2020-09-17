@@ -1,5 +1,5 @@
 .reviews {
-  background:url("../img/rasberry.png") right top 10% no-repeat;
+  background: url("../img/rasberry.png") right top 10% no-repeat;
   position: relative;
 
   &:before {
@@ -9,6 +9,7 @@
     bottom: -15%
   }
 }
+
 .reviews:after {
   content: url("../img/mix-berry.png");
   position: absolute;
@@ -18,7 +19,7 @@
 }
 
 .review__display {
-  padding: 42px 142px 42px 42px;
+  padding: 42px 42px 42px 42px;
   background: url("../img/bush.png") right no-repeat #F8FAF9;
   position: relative;
   overflow: hidden;
@@ -36,7 +37,6 @@
     top: -65px
   }
 }
-
 
 .review__display-inner {
   display: flex;
@@ -73,4 +73,43 @@
 .review__author {
   font-weight: bold;
 }
+
+.review__display-inner {
+  display: flex;
+}
+
+review__display {
+  padding: 24px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .review__display-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .review__avatar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reasons {
+    margin-bottom: rem(9px);
+  }
+
+  .reason__icon:before {
+    display: none;
+  }
+}
+
 
