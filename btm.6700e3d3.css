@@ -1,0 +1,44 @@
+.hero__button-wrapper {
+  max-width: 9.61rem;
+}
+
+.button {
+  font-size: 0.8888888889rem;
+  font-weight: bold;
+  padding: 1.3333333333rem 2.8888888889rem;
+  text-transform: uppercase;
+  border-radius: 5.5555555556rem;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: none;
+}
+.button__color_white {
+  background-color: white;
+  color: #365A49;
+}
+.button__color_white:hover {
+  color: white;
+  background-color: #365A49;
+}
+
+.button__color_green {
+  background-color: #365A49;
+  color: white;
+}
+.button__color_green:hover {
+  color: #365A49;
+  background-color: white;
+}
+
+.button__color_none {
+  background-color: transparent;
+  font-weight: normal;
+  text-transform: none;
+}
+.button__color_none:hover {
+  color: #365A49;
+}
+
+/*# sourceMappingURL=/btm.6700e3d3.css.map */

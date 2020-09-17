@@ -1,0 +1,2 @@
+.radio__elem{display:none}.radio__elem:checked~.radio__visible:before{display:block}.radio__visible{width:26px;height:26px;position:relative;border-radius:50%;background:#fff}.radio__visible:before{content:"";width:14px;height:14px;background:#365a49;border-radius:50%;position:absolute;display:none;top:50%;left:50%;transform:translate(-50%,-50%)}.radio{display:flex;cursor:pointer;user-select:none}.radio_checkbox .radio__visible{border-radius:0}.radio__title{margin-right:23px;margin-bottom:21px}
+/*# sourceMappingURL=radio.1bea0d8b.css.map */

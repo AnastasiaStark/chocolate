@@ -1,0 +1,1 @@
+{"version":3,"sources":["css\\footer.scss"],"names":[],"mappings":"AACA;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE","file":"footer.86c5f33c.css","sourceRoot":"..","sourcesContent":["@import \"media\";\n.footer {\n  height: rem(93px);\n  padding: 0 10%;\n}\n\n.map__img {\n  width: 100%;\n}\n\n.adress {\n  margin-bottom: 6px;\n}\n\n"]}

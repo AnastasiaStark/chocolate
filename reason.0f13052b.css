@@ -1,0 +1,87 @@
+.headline {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 19px;
+}
+
+.section__subtitle {
+  color: #666666;
+}
+
+.reason__list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.reason__item {
+  padding: 0 24px;
+  position: relative;
+}
+.reason__item:before {
+  content: url("/Combined shape 2204.d09c8067.png");
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.reason__item:first-child {
+  padding-left: 0;
+}
+
+.reason__item:last-child {
+  padding-right: 0;
+}
+.reason__item:last-child:before {
+  display: none;
+}
+
+.reasons {
+  text-align: center;
+}
+
+.reason__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.reason__title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.reason__icon {
+  background: url("/leaft-section.507047ca.png") left 73% no-repeat;
+}
+.reason__icon:before {
+  content: url("/berry.10956465.png");
+  position: absolute;
+  margin-bottom: -645px;
+  left: 0%;
+}
+
+@media screen and (max-width: 767px) {
+  .reason__list {
+    flex-direction: column;
+  }
+
+  .reason__item:before {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=/reason.0f13052b.css.map */
