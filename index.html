@@ -19,7 +19,6 @@
     <!-- Place favicon.ico in the root directory -->
 
 
-
     <link rel="stylesheet" href="./css/main.scss">
 
 
@@ -64,7 +63,29 @@
                     8 800 903 90 90
                     </span>
                 </a>
-                <a id="menu" class="menu__icon">&#9776</a>
+
+                <div id="menu_dropdown" class="menu_drp">
+                    <span class="menu_items-adaptive">&#9776</span>
+                    <ul class="menu__list-adaptive">
+                        <li class="menu__item-adaptive">О нас</li>
+                        <li class="menu__item-adaptive">Батончики</li>
+                        <li class="menu__item-adaptive">Команда</li>
+                        <li class="menu__item-adaptive">Меню</li>
+                        <li class="menu__item-adaptive">Отзывы</li>
+                        <li class="menu__item-adaptive">Как мы работаем</li>
+                        <li class="menu__item-adaptive">Контакты</li>
+                    </ul>
+                </div>
+
+
+                <script>
+                    let menuElem = document.getElementById('menu_dropdown');
+                    let titleElem = menuElem.querySelector('.menu_items-adaptive');
+
+                    titleElem.onclick = function() {
+                        menuElem.classList.toggle('open');
+                    };
+                </script>
             </header>
             <div class="hero__title-section">
                 <h2 class="hero__title"> Натуральные шоколадные батончики</h2>
@@ -152,6 +173,54 @@
                                 минералов.</p>
                         </div>
                     </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section composition">
+        <div class="container composition__container">
+            <ul class="composition__list">
+                <li class="composition__item">
+                    <div class="composition__image">
+                        <img src="./img/product.png" alt="продукт" class="composition__image-elem">
+                    </div>
+
+                    <div class="composition__deck">
+                        <h2 class="composition__title">
+                            Батончик “Гранола виноград”
+                        </h2>
+                        <div class="composition__text">
+                            Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое
+                            молоко, заменитель сахара и какао бобы.
+                        </div>
+                        <div class="composition__info">
+                            <div class="composition__info-cell">
+                                <div class="composition__kkal">
+                                    Калорийность
+                                </div>
+                                <span class="composition__kkal-desc"> <b>
+                                110 ккал </b>
+                            </span>
+                            </div>
+
+                            <div class="composition__info-cell">
+                                <div class="composition__weight">
+                                    Вес
+                                </div>
+                                <span class="composition__weight-desc"> <b>
+                                    95гр.</b>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="composition__order">
+                        <div class="composition__price">
+                            140 ₽
+                        </div>
+                        <div class="composition__btm">
+                            <button type="submit" class="button form__button button__color_green"> Заказать</button>
+                        </div>
+                        </div>
                 </li>
             </ul>
         </div>
@@ -267,23 +336,24 @@
                     </div>
                     <div class="form__btm">
                         <button type="submit" class="button form__button button__color_green"> Заказать</button>
-                        <button type="reset" class="button  form__button button__color_none">  Очистить </button>
+                        <button type="reset" class="button  form__button button__color_none"> Очистить</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
+
     <section class="map">
         <div class="map__wrapper">
             <img src="./img/map.png" alt="карта" class="map__img">
         </div>
         <footer class="footer">
             <div class="adress">Москва, ул.Новый Арбат, д.31/12</div>
-           <a href="tel:+79134568043" class="contact footer__contact">
+            <a href="tel:+79134568043" class="contact footer__contact">
                     <span class="contact__icon">
                         <img src="./img/Vector%20footer.png" alt="телефон">
                     </span>
-               <span class="contact__text">
+                <span class="contact__text">
                     8 800 903 90 90
                </span>
         </footer>
