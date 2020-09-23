@@ -20,6 +20,8 @@
 
 
     <link rel="stylesheet" href="./css/main.scss">
+    <script src="js/main.js"></script>
+
 
 
 </head>
@@ -63,29 +65,57 @@
                     8 800 903 90 90
                     </span>
                 </a>
-
-                <div id="menu_dropdown" class="menu_drp">
-                    <span class="menu_items-adaptive">&#9776</span>
-                    <ul class="menu__list-adaptive">
-                        <li class="menu__item-adaptive">О нас</li>
-                        <li class="menu__item-adaptive">Батончики</li>
-                        <li class="menu__item-adaptive">Команда</li>
-                        <li class="menu__item-adaptive">Меню</li>
-                        <li class="menu__item-adaptive">Отзывы</li>
-                        <li class="menu__item-adaptive">Как мы работаем</li>
-                        <li class="menu__item-adaptive">Контакты</li>
-                    </ul>
+                <div class="menu__drp" id="menu_dropdown">
+                    <div class="menu__top-line"></div>
+                    <div class="menu__middle-line"></div>
+                    <div class="menu__low-line"></div>
                 </div>
 
+                <div class="adaptive-menu" id=adaptive-menu>
+                    <span class="adaptive__menu-close" id="adaptive__menu-close">+</span>
+                    <ul class="adaptive__list">
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">О нас</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Батончики</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Команда</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Меню</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Как мы работаем</a>
+                        </li>
+                        <li class="adaptive__item">
+                            <a class="adaptive__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
 
+                </div>
                 <script>
-                    let menuElem = document.getElementById('menu_dropdown');
-                    let titleElem = menuElem.querySelector('.menu_items-adaptive');
+                    var list = document.querySelector('#menu_dropdown'),
+                    close = document.querySelector('#adaptive__menu-close'),
+                    adaptive = document.querySelector('#adaptive-menu');
+                list.addEventListener('click', function () {
+                    adaptive.style.display = 'flex';
+                });
+                close.addEventListener('click', function () {
+                    adaptive.style.display = 'none';
+                });</script>
+<!--               <script>-->
+<!--                    let menuElem = document.getElementById('menu_dropdown');-->
+<!--                    let titleElem = menuElem.querySelector('.adaptive__item');-->
 
-                    titleElem.onclick = function() {
-                        menuElem.classList.toggle('open');
-                    };
-                </script>
+<!--                    titleElem.onclick = function() {-->
+<!--                        menuElem.classList.toggle('open');-->
+<!--                    };-->
+<!--                 </script>-->
             </header>
             <div class="hero__title-section">
                 <h2 class="hero__title"> Натуральные шоколадные батончики</h2>
@@ -180,8 +210,55 @@
 
     <section class="section composition">
         <div class="container composition__container">
+            <div class="composition__menu">
+                    <svg class="icon-bits">
+                        <use href="./img/sprite.svg#bits"></use>
+                    </svg>
+                <div class="composition__text-menu">Состав</div>
+                <ul class="composition__list-menu">
+                    <li class="composition__item-menu">
+                        <svg class="icon-grape">
+                            <use href="./img/sprite.svg#grape"></use>
+                        </svg>
+                        <div class="name">Виноград</div>
+                        <div class="weight">25 г</div>
+                    </li>
+                    <li class="composition__item-menu">
+                        <div class="name">Грецкий орех</div>
+                        <div class="weight">32 г</div>
+                    </li>
+                    <li class="composition__item-menu">
+                        <svg class="image salad">
+
+                        </svg>
+                        <div class="name">Куннжутное семя</div>
+                        <div class="weight">20 г</div>
+                    </li>
+                    <li class="composition__item-menu">
+                        <svg class="image sauce">
+
+                        </svg>
+                        <div class="name">Сухое молоко</div>
+                        <div class="weight">10 г</div>
+                    </li>
+                    <li class="composition__item-menu">
+                        <svg class="image cucumber">
+
+                        </svg>
+                        <div class="name">зам. сахара</div>
+                        <div class="weight">4 г</div>
+                    </li>
+                    <li class="composition__item-menu">
+                        <svg class="image cheese">
+
+                        </svg>
+                        <div class="name">какао бобы</div>
+                        <div class="weight">4 г</div>
+                    </li>
+                </ul>
+            </div>
             <ul class="composition__list">
-                <li class="composition__item">
+                <li class="composition__item-menu">
                     <div class="composition__image">
                         <img src="./img/product.png" alt="продукт" class="composition__image-elem">
                     </div>
