@@ -2,6 +2,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+
 }
 .interactive-avatar {
   width: rem(74px);
@@ -12,19 +13,17 @@
   border: 6px solid transparent;
 
   &:hover {
-    border-color:#497870;
+    border-color: #365A49;
   }
 
-  &:focus {
-    border-color:#497870;
-  }
-
-  &_active {
-    border-color:#497870;
 
   &:last-child {
     margin-right: 0;
-}}}
+}}
+
+.active{
+  border-color: #365A49;
+}
 
 .interactive-avatar__img {
   object-fit: cover;

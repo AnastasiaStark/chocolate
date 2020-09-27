@@ -1,0 +1,64 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.team__item {
+  flex:1;
+  text-align: center;
+}
+
+.team__title {
+  display: inline-flex;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: rem(10px);
+}
+
+.team__desk {
+  color: #666666;
+}
+
+.text__content {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
+}
+
+.team__version_desktop .text__content {
+  position: absolute;
+}
+
+.team__info {
+  position: relative;
+}
+
+.team__version_mobile {
+  display: none;
+}
+
+.team__position-desk {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .team__version_desktop {
+    display: none;
+  }
+
+  .team__version_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team__position {
+    min-height: rem(400px);
+  }
+}
+

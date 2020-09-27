@@ -68,9 +68,6 @@
 
 
 @media screen and ( max-width:768px) {
-  .header {
-    padding: rem(31px) rem(45px) 0 rem(30px);
-  }
 
   .menu {
     @include tablets {

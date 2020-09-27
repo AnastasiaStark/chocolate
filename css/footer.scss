@@ -1,13 +1,62 @@
 @import "media";
+
+.map {
+  flex-direction: column;
+  position: relative;
+}
+
 .footer {
   height: rem(93px);
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding: 0 10%;
 }
 
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .map__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.adress {
+.map__wrapper {
+  height: 100%;
+}
+
+.address {
   margin-bottom: 6px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: rem(10px);
+}
+
+@media screen and ( max-width:415px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .social {
+    justify-content: center;
+  }
+  .footer__info {
+    text-align: center;
+  }
 }

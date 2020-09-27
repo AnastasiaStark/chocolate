@@ -78,8 +78,30 @@
   display: flex;
 }
 
-review__display {
+.review__display {
   padding: 24px 24px;
+}
+
+.review__list {
+  min-height: rem(200px);
+  position: relative;
+}
+
+.review__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+}
+
+.review__item.active {
+  opacity:1;
+  position:static;
+  pointer-events: unset;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,12 +125,11 @@ review__display {
     justify-content: center;
   }
 
-  .reasons {
-    margin-bottom: rem(9px);
-  }
-
   .reason__icon:before {
     display: none;
+  }
+  .reviews:after {
+  display: none
   }
 }
 

@@ -30,6 +30,7 @@
   border: none;
   padding: rem(18px) rem(11px);
   border: solid 3px transparent;
+  border-radius: 5%;
 
   &_textarea {
     height: 180px;
@@ -86,3 +87,17 @@
     display: none;
   }
 }
+
+@media screen and ( max-width:415px) {
+  .order__title {
+    font-size: rem(36px);
+    margin-bottom: rem(10px);
+  }
+
+    .form {
+      padding: 0 5%;
+
+      .form__btm {
+        padding: 0;
+      }
+    } }

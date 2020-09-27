@@ -50,13 +50,12 @@
 
 .reasons {
   text-align: center;
-
 }
 
 .reason__image-wrapper {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   background: #F2F5F4;
   border-radius: 50%;
   position: relative;
@@ -74,17 +73,44 @@
     content: url("../img/berry.png");
     position: absolute;
     margin-bottom: -645px;
-    left: 0%
+    left: 0%;
   }
 }
 
-@media screen and ( max-width:767px) {
+@media screen and ( max-width:768px) {
   .reason__list {
-    flex-direction: column;
+    padding: 0 5%;
   }
   .reason__item {
     &:before {
       display: none;
     }
+  }
+}
+
+@media screen and ( max-width:415px) {
+
+  .reason__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reason__list {
+    flex-direction: column;
+  }
+
+  .headline {
+    margin-bottom: rem(30px);
+  }
+
+  .reason__item {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10%;
+  }
+
+  .reason__item {
+    margin-bottom: 10%;
   }
 }

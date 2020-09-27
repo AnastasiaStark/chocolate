@@ -22,6 +22,7 @@
     "sass": "^1.26.10"
   },
   "dependencies": {
-    "general": "0.0.3"
+    "general": "0.0.3",
+    "jquery": "^3.5.1"
   }
 }
