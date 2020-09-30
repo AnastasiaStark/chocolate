@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "general": "0.0.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4"
   }
 }

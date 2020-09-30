@@ -1,0 +1,23 @@
+.modal {
+  display: none;
+}
+
+.modal__container {
+  background-color: #fff;
+  width: rem(306px);
+  height: rem(176px);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal__content {
+  font-weight: bold;
+  margin-bottom: rem(18px);
+}
+
+.input-error {
+  border-color:#FFA07A;
+}
