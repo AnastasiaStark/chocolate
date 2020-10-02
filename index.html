@@ -603,26 +603,32 @@
         </div>
     </section>
 
-    <section class="section player-section">
+    <section class="section video-section">
         <div class="container player-section__container">
-            <h2 class="section__title">Как мы работаем</h2>
-            <div class="player">
-                <div class="player__wrapper">
-                    <div id="yt-player" class="player__elem"></div>
-                    <div class="player__splash"></div>
-                </div>
-                <div class="player__toolbar">
-                    <div class="duration">
-                        <img src="" alt="" class="duration__img">
-                        <div id="timer" class="duration__timer">00:00</div>
-                        <input type="range" class="duration__length" id="durationLevel">
+            <h2 class="section__title player__title">Как мы работаем</h2>
+            <section class="video">
+                <div class="video__container">
+                    <div class="video__player">
+                        <video id="player" poster="./img/player.png">
+                            <source src="" type="video/mp4">
+                        </video>
+                        <img src="./img/play%20big.png" alt="" class="video__player-img">
                     </div>
-                    <div class="sound">
-                        <img src="./img/play.png" class="sound__mic" id="mic" alt="">
-                        <div class="sound__volume">
-                            <input type="range" class="duration__length duration__length--other" id="micLevel">
+                    <div class="video__toolbar">
+                        <div class="duration">
+                            <img src="./img/play.png" alt="" class="duration__img">
+                            <div id="timer" class="duration__timer">00:00</div>
+                            <input type="range" class="duration__length" id="durationLevel">
+                        </div>
+                        <div class="sound">
+                            <img src="./img/sound.png" class="sound__mic" id="mic" alt="">
+                            <div class="sound__volume">
+                                <input type="range" class="duration__length duration__length--other" id="micLevel">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
