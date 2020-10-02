@@ -51,19 +51,17 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  margin-right: rem(42px);
+  margin-right: rem(20px);
 }
 
 .duration__img {
-  margin: rem(10px);
+  padding: rem(10px);
+  cursor: pointer;
 }
 
-.duration__length--other {
-  width: 50%;
-}
 
 .duration__length {
-  width: 80%;
+  width: 100%;
   height: rem(6px);
   border-radius: rem(2px);
   background-color: #626262;
@@ -78,6 +76,6 @@
 
 .sound__volume {
   display: flex;
-  padding-left: rem(23px);
+  padding: rem(23px);
 }
 
