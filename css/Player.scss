@@ -69,6 +69,21 @@
   outline: none;
 }
 
+.duration__length--other {
+  width: rem(58px);
+  height: rem(4px);
+}
+
+.duration__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #626262;
+  cursor: pointer;
+  width: rem(14px);
+  height: rem(14px);
+  border-radius: 50%;
+}
+
 .sound {
   display: flex;
   align-items: center;
@@ -78,4 +93,5 @@
   display: flex;
   padding: rem(23px);
 }
+
 
