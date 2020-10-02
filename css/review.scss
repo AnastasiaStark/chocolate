@@ -6,7 +6,8 @@
     content: url("../img/leaft-review.png");
     position: absolute;
     left: 0;
-    bottom: -15%
+    bottom: -15%;
+    z-index: -1;
   }
 }
 

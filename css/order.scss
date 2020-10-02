@@ -8,6 +8,8 @@
     left: 5%;
     position: absolute;
     bottom: 20px;
+
+
   }}
 
     .order-section:after {
@@ -17,9 +19,22 @@
       bottom: 20px;
     }
 
+.order-section__container:before {
+    content: url("../img/berry form.png");
+    position: absolute;
+    right:0;
+    top:rem(-131px);
+}
+
 
 .border__title {
   font-size: 48px;
   margin-bottom: 83px;
+}
+
+@media screen and ( max-width:415px) {
+  .order-section__container:before {
+    display: none;
+  }
 }
 
