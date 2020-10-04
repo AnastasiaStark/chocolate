@@ -103,7 +103,7 @@ $('.form').submit(e => {
     const to = form.find("[name='to']");
 
     const modal = $("#modal");
-    const content = modal.find("modal__content")
+    const content = modal.find(".modal__content")
 
     modal.removeClass("error-modal");
 
@@ -251,7 +251,7 @@ const VerticalAcco3 = () => {
     const calculateWidth = () => {
         const windowWidth = window.innerWidth;
         const MAX__WIDTH = 550;
-        const linksWidth = links [0].offsetWidth;
+        const linksWidth = links[0].offsetWidth;
 
         const reqWidth = windowWidth - (linksWidth * links.length);
         return reqWidth > MAX__WIDTH ? MAX__WIDTH : reqWidth;
@@ -267,11 +267,13 @@ const VerticalAcco3 = () => {
 
     links.forEach(function (elem) {
         elem.addEventListener("click", function (e) {
+            console.log(123)
             e.preventDefault();
             const link = e.target.closest(".product-menu__link")
             const active = document.querySelector(".product-menu__item.active");
             if (active) {
                 closeItem(active);
+                return;
             }
 
             if (!active || active.querySelector(".product-menu__link") !== link) {
@@ -279,25 +281,12 @@ const VerticalAcco3 = () => {
                 current.classList.add("active");
                 const currentText = current.querySelector(".product-content");
                 if (body.offsetWidth > 415) {
-                    currentText.style.width = calculateWidth + 'px';
+                    currentText.style.width = calculateWidth() + 'px';
                 } else {
                     currentText.style.width = "100%";
                 }
             }
         });
-    });
-
-    document.addEventListener("click", e => {
-        e.preventDefault();
-        let activePerson = document.querySelector(".product-menu__item.active");
-        const target = e.target;
-        console.log(target);
-        if (!target.closest(".product-menu") && activePerson) {
-            closeItem(activePerson);
-        }
-        if (target.closest(".close-btn")) {
-            closeItem(activePerson)
-        }
     });
 };
 
