@@ -514,6 +514,50 @@
         </div>
     </section>
 
+    <section class="section product">
+        <div class="product-container">
+            <h1 class="section__title product__title">Меню</h1>
+            <ul class="product-menu">
+                <li class="product-menu__item">
+                    <a href="#" class="product-menu__link" style="background-image: url(./img/Slide_1.png)">
+                        <div class="product-text">Батончики с молоком</div>
+                    </a>
+                    <div class="product-content">
+                        <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                            полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.
+                            Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                            еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с
+                            днём Победы. </p>
+                    </div>
+                </li>
+                <li class="product-menu__item">
+                    <a href="#" class="product-menu__link" style="background-image: url(./img/Slide_2-min.png)">
+                        <div class="product-text">С мёдом и фруктами</div>
+                    </a>
+                    <div class="product-content">
+                        <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                            полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.
+                            Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                            еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с
+                            днём Победы. </p>
+                    </div>
+                </li>
+                <li class="product-menu__item">
+                    <a href="#" class="product-menu__link" style="background-image: url(./img/Slide_3.png)">
+                        <div class="product-text">Дикие ягоды</div>
+                    </a>
+                    <div class="product-content">
+                        <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                            полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.
+                            Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                            еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с
+                            днём Победы. </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section class="section reviews">
         <div class="container reviews__container">
             <h1 class="section__title">Отзывы</h1>
@@ -610,13 +654,13 @@
                 <div class="video__container">
                     <div class="video__player">
                         <video id="player" poster="./img/player.png">
-                            <source src="" type="video/mp4">
+                            <source src="RoboMusliBar.mp4" type="video/mp4">
                         </video>
-                        <img src="./img/play%20big.png" alt="" class="video__player-img">
+                        <img src="./img/play%20big.png" alt="" class="video__player-img play">
                     </div>
                     <div class="video__toolbar">
                         <div class="duration">
-                            <img src="./img/play.png" alt="" class="duration__img">
+                            <img src="./img/play.png" alt="" class="duration__img play">
                             <input type="range" class="duration__length" id="durationLevel">
                         </div>
                         <div class="sound">
@@ -708,8 +752,7 @@
     </section>
 
     <section class="section map">
-        <div class="map__wrapper">
-            <img src="./img/map.png" alt="карта" class="map__img">
+        <div id="map" class="map__wrapper">
         </div>
         <footer class="footer">
             <div class="footer__info">
@@ -756,7 +799,6 @@
         </footer>
     </section>
 </div>
-</div>
 <div id="modal" class="modal">
     <div class="modal__container">
         <div class="modal__content">
@@ -802,7 +844,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/map.js"></script>
 <script src="./js/main.js"></script>
+
+
 <!--<script src="./js/jquery-3.5.1.min.js"></script>-->
 
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->

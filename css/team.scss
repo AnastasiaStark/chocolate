@@ -18,6 +18,23 @@
   background: transparent;
   cursor: pointer;
   margin-bottom: rem(10px);
+
+  &:after {
+    content:"";
+    border-top: 14px solid black;
+    border-left: 9px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 9px solid transparent;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+
+  }
+}
+
+.team__item.active .team__title:after {
+  transform:rotate(-180deg) ;
+  top: -10px;
 }
 
 .team__desk {

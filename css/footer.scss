@@ -22,14 +22,16 @@
   flex-direction: column;
   justify-content: center;
 }
-.map__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+//.map__img {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
 
 .map__wrapper {
   height: 100%;
+  max-width: $containerWidth;
+  width: 100%;
 }
 
 .address {

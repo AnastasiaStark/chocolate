@@ -44,6 +44,7 @@
   width: 10%;
   top:50%;
   left: 50%;
+  cursor: pointer;
 }
 
 .duration {
@@ -92,6 +93,11 @@
 .sound__volume {
   display: flex;
   padding: rem(23px);
+}
+
+.video__player-img--hidden {
+  opacity:0
+
 }
 
 
